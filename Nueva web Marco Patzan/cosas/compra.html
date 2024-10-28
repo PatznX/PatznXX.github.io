@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="stylescompra.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Pago</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Ingrese los datos requeridos</legend>
+                <label for="card-name">Nombre en la Tarjeta:</label>
+                <input type="text" id="card-name" name="card-name" placeholder="nombre de la tarjeta">
+                <br>
+
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="1975890293456799">
+                <br>
+                <label for="expiry-date">Fecha de Expiración:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA">
+                <br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" pattern="\d{3}" maxlength="3" placeholder="555">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección de Envío</legend>
+                <label for="address">Dirección:</label>
+                <input type="text" id="direccion" placeholder="4-53" >
+                <br>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" placeholder="San Cristobal">
+                <br>
+                <label for="state">Estado/Provincia:</label>
+                <input type="text" id="estado" placeholder="Capital">
+                <br>
+                <label for="postal-code">Código Postal:</label>
+                <input type="text" id="postal-code"  placeholder="502">
+                <br>
+                <label for="country">País:</label>
+                <input type="text" id="country" placeholder="Guatemala?">
+            </fieldset>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>

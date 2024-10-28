@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(188, 29, 29);
+}
+
+.empresa {
+    font-family: 'Kanit';
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.carrito a {
+    font-family: 'Kanit';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.carrito {
+    padding-right: 30px;
+}
+
+.carrito a:hover {
+    color: rgb(59, 59, 59);
+}
+
+h2{
+    font-family: 'Kanit';
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 50px;
+    margin-top: 25px;
+ 
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 5px 20px;
+	border-radius: 1rem;
+	margin-top: 5px;
+	font-size: 20px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+
+/* Estilos para el botón Carrito */
+.cart-btn {
+    background-color: yellow; /* Color de fondo amarillo */
+    color: black; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 1rem; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1px; /* Tamaño de la fuente */
+    margin-top: 1px; /* Espaciado superior */
+    transition: all 0.3s; /* Transición suave */
+}
+
+.cart-btn:hover {
+    background-color: orange; /* Color de fondo al pasar el mouse */
+}
+
+
